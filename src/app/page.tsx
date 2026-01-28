@@ -1,10 +1,17 @@
 import Link from 'next/link'
 import ImpactSection from '@/components/ImpactSection'
+import { HeroSection } from '@/components/landing-page/sections/HeroSection'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main id="main-content" className={styles.main}>
+    <main id="main-content" className="min-h-screen w-full bg-[#0a0a0a] overflow-hidden">
+      {/* Hero Section from master branch */}
+      <div className="flex items-center justify-center">
+        <HeroSection />
+      </div>
+
+      {/* Original content from feat/impact-section */}
       <div className={styles.container}>
         <header className={styles.header}>
           <h1 className={styles.title}>CommitLabs</h1>
@@ -64,4 +71,3 @@ export default function Home() {
     </main>
   )
 }
-
