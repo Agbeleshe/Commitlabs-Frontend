@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './page.module.css'
+import CommitmentJourney from '@/components/CommitmentJourney/CommitmentJourney'
 
 export default function Home() {
   return (
@@ -32,6 +33,8 @@ export default function Home() {
             enforces those rules cryptographically.
           </p>
         </section>
+
+        <CommitmentJourney />
 
         <section className={styles.features}>
           <div className={styles.featureCard}>
