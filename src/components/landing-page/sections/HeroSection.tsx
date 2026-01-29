@@ -6,6 +6,7 @@ import { FaGithub, FaEnvelope } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import { motion } from "framer-motion";
 
+
 const containerVariants = {
   hidden: {},
   visible: {
