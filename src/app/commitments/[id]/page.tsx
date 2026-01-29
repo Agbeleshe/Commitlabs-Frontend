@@ -2,7 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
-import CommitmentHealthMetrics from '../../../components/dashboard/CommitmentHealthMetrics';
+import CommitmentHealthMetrics from '@/components/dashboard/CommitmentHealthMetrics';
+import CommitmentDetailAllocationConstraints from '@/components/CommitmentDetailAllocationConstraints';
+
 
 // Mock data for the commitment
 const MOCK_COMPLIANCE_DATA = [
@@ -48,10 +50,20 @@ export default function CommitmentDetailPage({
                     </div>
                 </header>
 
+
                 {/* Health Metrics Section */}
                 <section>
                     <CommitmentHealthMetrics complianceData={MOCK_COMPLIANCE_DATA} />
                 </section>
+
+                {/* Allocation Constraints Section */}
+                <CommitmentDetailAllocationConstraints 
+                    constraints={[
+                        { id: '1', text: 'Max 50% allocation to any single protocol' },
+                        { id: '2', text: 'Only whitelisted DeFi protocols allowed' },
+                        { id: '3', text: 'Minimum 20% must remain in stablecoins' },
+                    ]}
+                />
             </div>
         </main>
     );
