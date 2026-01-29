@@ -78,7 +78,7 @@ export const Navigation: React.FC = () => {
         <div className="flex items-center gap-3 justify-self-end">
           <Link
             href="/create"
-            className="inline-flex items-center justify-center rounded-[14px] border border-[rgba(0,212,255,0.6)] bg-[rgba(5,10,14,0.9)] w-[133.5px] h-[45px] px-[20.56px] py-[13.89px] font-roboto text-[14px] font-medium leading-5 text-white shadow-[0_0_14px_rgba(0,212,255,0.45)] transition-[box-shadow,transform] duration-300 ease-[ease] hover:shadow-[0_0_22px_rgba(0,212,255,0.7)] hover:-translate-y-px focus-visible:shadow-[0_0_22px_rgba(0,212,255,0.7)] focus-visible:-translate-y-px max-[900px]:hidden max-[600px]:px-[1.1rem] max-[600px]:py-[0.6rem] max-[600px]:text-[0.9rem]"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-[14px] border border-[rgba(0,212,255,0.6)] bg-[rgba(5,10,14,0.9)] w-[133.5px] h-[45px] px-[20.56px] py-[13.89px] font-roboto text-[14px] font-medium leading-5 text-white shadow-[0_0_14px_rgba(0,212,255,0.45)] transition-[box-shadow,transform] duration-300 ease-[ease] hover:shadow-[0_0_22px_rgba(0,212,255,0.7)] hover:-translate-y-px focus-visible:shadow-[0_0_22px_rgba(0,212,255,0.7)] focus-visible:-translate-y-px max-[900px]:hidden max-[600px]:px-[1.1rem] max-[600px]:py-[0.6rem] max-[600px]:text-[0.9rem]"
           >
             Get Started
           </Link>
