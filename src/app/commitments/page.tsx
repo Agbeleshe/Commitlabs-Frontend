@@ -192,7 +192,7 @@ export default function MyCommitments() {
         onCreateNew={() => router.push('/create')}
       />
 
-      <div className="w-full flex-1 px-[5.5rem] py-8 max-[1024px]:px-8 max-[640px]:px-4">
+      <div className="w-full flex-1 px-22 py-8 max-[1024px]:px-8 max-[640px]:px-4">
         <MyCommitmentsStats
           totalActive={mockStats.totalActive}
           totalCommittedValue={mockStats.totalCommittedValue}
